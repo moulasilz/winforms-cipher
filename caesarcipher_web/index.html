@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bộ mã hóa giải mã Caesar Cipher </title>
+</head>
+<style>
+    * {
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 400px;
+    }
+
+    .container label {
+
+        display: inline-block;
+        width: 100px;
+    }
+
+    .container>div {
+        padding: 8px;
+    }
+
+    .container>div:nth-child(2)>div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container>div:nth-child(2)>div input#key {
+        width: 48px;
+    }
+</style>
+
+<body>
+    <script>
+        let input = "";
+        let output = "";
+    </script>
+    <div class="container">
+        <div>
+            <label for="plaintext">Input</label> <br>
+            <input type="text" name="plaintext" id="plaintext" value="abc">
+        </div>
+        <div>
+
+            <label for="key">Khóa</label>
+            <div>
+                <input type="number" name="key" id="key" value="abc">
+                <button id="encript" onclick="caesarCipher()">Mã hóa</button>
+                <button id="decript" onclick="Decipher()">Giải mã</button>
+            </div>
+        </div>
+        <div>
+
+            <label for="ciphertext">Output</label> <br>
+            <input type="text" name="ciphertext" id="ciphertext" value="abc">
+        </div>
+
+    </div>
+</body>
+<script>
+    function cipher(ch, key) {
+        let check = (ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z');
+        if (!check) {
+
+            return ch;
+        }
+
+        let d = (ch >= 'A' && ch <= 'Z') ? 'A' : 'a';
+
+        return ((((ch + key) - d) % 26) + d);
+    }
+
+    function Encipher() {
+        let input = document.getElementById("plaintext").value;
+        let key = document.getElementById("key").value;
+        let output = "";
+        console.log(input);
+        for (let index of input) {
+            output += cipher(index, key);
+
+        }
+        console.log(output);
+    }
+
+    function Decipher() {
+        let output = "";
+        let input = document.getElementById("ciphertext").value;
+        let key = document.getElementById("key").value;
+        output = Encipher(input, 26 - key);
+        console.log(output);
+    }
+
+    function caesarCipher () {
+        let str = document.getElementById("plaintext").value;
+        let key = document.getElementById("key").value;
+        let output = str.toUpperCase().replace(/[A-Z]/g, c => String.fromCharCode((c.charCodeAt(0) - 65 + key) % 26 + 65));
+        document.getElementById("ciphertext").value = output;
+        console.log(output);    
+    }
+</script>
+
+</html>

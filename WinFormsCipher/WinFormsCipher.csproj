@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{801B4037-FB32-4900-BEBA-B67224C69AF3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WinFormsCipher</RootNamespace>
+    <AssemblyName>WinFormsCipher</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CaesarCipher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CaesarCipher.Designer.cs">
+      <DependentUpon>CaesarCipher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Homepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Homepage.Designer.cs">
+      <DependentUpon>Homepage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlayFair.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="AffineCipher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AffineCipher.Designer.cs">
+      <DependentUpon>AffineCipher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RailFenceCipher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RailFenceCipher.Designer.cs">
+      <DependentUpon>RailFenceCipher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlayfairCipher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlayfairCipher.Designer.cs">
+      <DependentUpon>PlayfairCipher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ColumnTransCipher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColumnTransCipher.Designer.cs">
+      <DependentUpon>ColumnTransCipher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VigenereCipher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VigenereCipher.Designer.cs">
+      <DependentUpon>VigenereCipher.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CaesarCipher.resx">
+      <DependentUpon>CaesarCipher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Homepage.resx">
+      <DependentUpon>Homepage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AffineCipher.resx">
+      <DependentUpon>AffineCipher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RailFenceCipher.resx">
+      <DependentUpon>RailFenceCipher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayfairCipher.resx">
+      <DependentUpon>PlayfairCipher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColumnTransCipher.resx">
+      <DependentUpon>ColumnTransCipher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VigenereCipher.resx">
+      <DependentUpon>VigenereCipher.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue neon arrow down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue neon arrow down1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue neon arrow up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transparent %28100%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgmain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
