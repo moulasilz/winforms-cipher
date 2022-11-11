@@ -32,9 +32,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Homepage));
             this.PanelMenu = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.BtnColumnTrans = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.BtnAffine = new System.Windows.Forms.Button();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.BtnColumnTrans = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.BtnRailFence = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -76,7 +76,7 @@
             this.PanelMenu.Location = new System.Drawing.Point(0, 0);
             this.PanelMenu.Margin = new System.Windows.Forms.Padding(4);
             this.PanelMenu.Name = "PanelMenu";
-            this.PanelMenu.Size = new System.Drawing.Size(192, 611);
+            this.PanelMenu.Size = new System.Drawing.Size(192, 603);
             this.PanelMenu.TabIndex = 0;
             // 
             // panel7
@@ -87,33 +87,6 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(192, 50);
             this.panel7.TabIndex = 8;
-            // 
-            // BtnColumnTrans
-            // 
-            this.BtnColumnTrans.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.BtnColumnTrans.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnColumnTrans.Dock = System.Windows.Forms.DockStyle.Right;
-            this.BtnColumnTrans.FlatAppearance.BorderSize = 0;
-            this.BtnColumnTrans.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(131)))), ((int)(((byte)(150)))));
-            this.BtnColumnTrans.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightPink;
-            this.BtnColumnTrans.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnColumnTrans.Location = new System.Drawing.Point(8, 0);
-            this.BtnColumnTrans.Name = "BtnColumnTrans";
-            this.BtnColumnTrans.Size = new System.Drawing.Size(184, 50);
-            this.BtnColumnTrans.TabIndex = 2;
-            this.BtnColumnTrans.Text = "Mã hóa Hàng";
-            this.BtnColumnTrans.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnColumnTrans.UseVisualStyleBackColor = false;
-            this.BtnColumnTrans.Click += new System.EventHandler(this.BtnColumnTrans_Click);
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.BtnColumnTrans);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 311);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(192, 50);
-            this.panel6.TabIndex = 7;
             // 
             // BtnAffine
             // 
@@ -132,6 +105,33 @@
             this.BtnAffine.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnAffine.UseVisualStyleBackColor = false;
             this.BtnAffine.Click += new System.EventHandler(this.BtnAffine_Click);
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.BtnColumnTrans);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel6.Location = new System.Drawing.Point(0, 311);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(192, 50);
+            this.panel6.TabIndex = 7;
+            // 
+            // BtnColumnTrans
+            // 
+            this.BtnColumnTrans.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BtnColumnTrans.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnColumnTrans.Dock = System.Windows.Forms.DockStyle.Right;
+            this.BtnColumnTrans.FlatAppearance.BorderSize = 0;
+            this.BtnColumnTrans.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(131)))), ((int)(((byte)(150)))));
+            this.BtnColumnTrans.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightPink;
+            this.BtnColumnTrans.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnColumnTrans.Location = new System.Drawing.Point(8, 0);
+            this.BtnColumnTrans.Name = "BtnColumnTrans";
+            this.BtnColumnTrans.Size = new System.Drawing.Size(184, 50);
+            this.BtnColumnTrans.TabIndex = 2;
+            this.BtnColumnTrans.Text = "Mã hóa Hàng";
+            this.BtnColumnTrans.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnColumnTrans.UseVisualStyleBackColor = false;
+            this.BtnColumnTrans.Click += new System.EventHandler(this.BtnColumnTrans_Click);
             // 
             // panel5
             // 
@@ -251,7 +251,7 @@
             this.footermenulabel.Location = new System.Drawing.Point(4, 582);
             this.footermenulabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.footermenulabel.Name = "footermenulabel";
-            this.footermenulabel.Size = new System.Drawing.Size(178, 20);
+            this.footermenulabel.Size = new System.Drawing.Size(209, 23);
             this.footermenulabel.TabIndex = 0;
             this.footermenulabel.Text = "Bộ công cụ mã hóa ";
             // 
@@ -297,15 +297,14 @@
             this.panelMainContainer.Location = new System.Drawing.Point(192, 0);
             this.panelMainContainer.Margin = new System.Windows.Forms.Padding(4);
             this.panelMainContainer.Name = "panelMainContainer";
-            this.panelMainContainer.Size = new System.Drawing.Size(892, 611);
+            this.panelMainContainer.Size = new System.Drawing.Size(890, 603);
             this.panelMainContainer.TabIndex = 1;
             // 
             // Homepage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
-            this.ClientSize = new System.Drawing.Size(1084, 611);
+            this.ClientSize = new System.Drawing.Size(1082, 603);
             this.Controls.Add(this.panelMainContainer);
             this.Controls.Add(this.PanelMenu);
             this.Font = new System.Drawing.Font("Lucida Sans Unicode", 11F);
