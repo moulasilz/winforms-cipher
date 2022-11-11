@@ -21,21 +21,14 @@ namespace WinFormsCipher
             label3.Text = label3.Text.ToUpper();
         }
 
-        private string Cipher(string input, string key, bool isEncrypt)
-        {
-            string output = "";
-            
-            return output;
-        }
-
         public string Encipher(string input, string key)
         {
-            return Cipher(input, key, true);
+            return ColumnarCipher.Encipher(input, key, '_');
         }
 
         public string Decipher(string input, string key)
         {
-            return Cipher(input, key, false);
+            return ColumnarCipher.Decipher(input, key);
         }
 
 
@@ -84,7 +77,7 @@ namespace WinFormsCipher
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
-            
+
         }
 
         private void buttontextBoxInput_Click(object sender, EventArgs e)
@@ -161,4 +154,5 @@ namespace WinFormsCipher
         }
 
     }
+    
 }

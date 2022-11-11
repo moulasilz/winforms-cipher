@@ -53,6 +53,7 @@
     <Compile Include="CaesarCipher.Designer.cs">
       <DependentUpon>CaesarCipher.cs</DependentUpon>
     </Compile>
+    <Compile Include="ColumnarCipher.cs" />
     <Compile Include="Homepage.cs">
       <SubType>Form</SubType>
     </Compile>
